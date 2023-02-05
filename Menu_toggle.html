@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Menu_toggle.css">
+    <title>Menus Toggler</title>
+</head>
+<body>
+    <header>    
+        <span>
+            <input type="button" value="..." id="open">
+        </span>
+        <nav id="navi" class="hidden">
+            <div class="Menus">
+                <a href="#" id="men1">MENU 1
+                </a>
+                <a href="#" id="men2">MENU 2
+                </a>
+                <a href="#" id="men3">MENU 3
+                </a>
+                <a href="#" id="men4">MENU 4
+                </a>
+                <a href="#" id="men5">MENU 5
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- BLOC MENU 1 -->
+        <div class="M1 hidden">
+            <h3>MENU 1</h3>
+            <table id="arrpict">
+                <th>Bateaux
+                </th>
+                <th>Animaux
+                </th>
+                    <tr>
+                        <td class="boat1">
+                            Bateau
+                        </td>
+                        <td class="anim1">
+                            Animal
+                        </td>
+                    </tr>
+            </table>
+            <p>
+            </p>
+        </div>
+        <!-- BLOC MENU 2 -->
+        <div class="M2 hidden">
+            <h3>MENU 2</h3>
+            <div> 
+                <input type="text" id="box1" placeholder="Insérez votre prénom">
+                <input type="text" id="box2" placeholder="Insérez votre nom">
+                <input type="button" value="Tableau" onclick="insert_tab()" id="buttab">     
+            </div>
+            <div>
+                <table id="tabnom" class="hidden">
+                <th>
+                    Prenom
+                </th>
+                <th>
+                    Nom
+                </th>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </table>
+            </div>
+        </div>    
+        <!-- BLOC MENU 5 -->
+        <div class="M3 hidden">
+            <h3>MENU 3</h3>
+            <select id="style"  >
+                <option value="">Choisissez une police</option>
+                <option value="Brush Script MT">Brush Script MT</option>
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+            </select>
+            <p id="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Hic odit necessitatibus ipsa accusamus ex vitae libero similique aspernatur quas. <br>
+                Possimus consequatur numquam quisquam et quis?
+            </p>
+        </div>
+        <!-- BLOC MENU 4 -->
+        <div class="M4 hidden">
+            <h3>MENU 4</h3>
+            <div>
+                <ul id="ulm4">
+                    <li>Value 1</li>
+                    <li>Value 2</li>
+                    <li>Value 3</li>
+                    <li>Value 4</li>
+                </ul>
+                <input type="button" value="Croissant" id="croissant">
+                <input type="button" value="Décroissant" id="decroissant">
+            </div>
+        </div>
+        <!-- BLOC MENU 5 -->
+        <div class="M5 hidden">
+            <h3>MENU 5</h3>
+        </div>
+    </main>
+    <script src="Menu_toggle.js">
+    </script>
+</body>
+</html>
